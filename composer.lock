@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3729aab2842f5681e8f96d65482cf05f",
+    "content-hash": "06f64b3db112ebb94deca269e408fc8e",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2246,6 +2246,153 @@
             "time": "2024-05-21T13:39:04+00:00"
         },
         {
+            "name": "lorisleiva/laravel-actions",
+            "version": "v2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lorisleiva/laravel-actions.git",
+                "reference": "d5c2ca544f40d85f877b38eb6d23e9c967ecb69f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lorisleiva/laravel-actions/zipball/d5c2ca544f40d85f877b38eb6d23e9c967ecb69f",
+                "reference": "d5c2ca544f40d85f877b38eb6d23e9c967ecb69f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0|^11.0",
+                "lorisleiva/lody": "^0.5",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0",
+                "pestphp/pest": "^1.23|^2.34",
+                "phpunit/phpunit": "^9.6|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lorisleiva\\Actions\\ActionServiceProvider"
+                    ],
+                    "aliases": {
+                        "Action": "Lorisleiva\\Actions\\Facades\\Actions"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lorisleiva\\Actions\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Loris Leiva",
+                    "email": "loris.leiva@gmail.com",
+                    "homepage": "https://lorisleiva.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel components that take care of one specific task",
+            "homepage": "https://github.com/lorisleiva/laravel-actions",
+            "keywords": [
+                "action",
+                "command",
+                "component",
+                "controller",
+                "job",
+                "laravel",
+                "object"
+            ],
+            "support": {
+                "issues": "https://github.com/lorisleiva/laravel-actions/issues",
+                "source": "https://github.com/lorisleiva/laravel-actions/tree/v2.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/lorisleiva",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-13T12:47:32+00:00"
+        },
+        {
+            "name": "lorisleiva/lody",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lorisleiva/lody.git",
+                "reference": "c2f51b070e99f3a240d66cf68ef1f232036917fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lorisleiva/lody/zipball/c2f51b070e99f3a240d66cf68ef1f232036917fe",
+                "reference": "c2f51b070e99f3a240d66cf68ef1f232036917fe",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.0|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0",
+                "pestphp/pest": "^1.20|^2.34",
+                "phpunit/phpunit": "^9.5.10|^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lorisleiva\\Lody\\LodyServiceProvider"
+                    ],
+                    "aliases": {
+                        "Lody": "Lorisleiva\\Lody\\Lody"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lorisleiva\\Lody\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Loris Leiva",
+                    "email": "loris.leiva@gmail.com",
+                    "homepage": "https://lorisleiva.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Load files and classes as lazy collections in Laravel.",
+            "homepage": "https://github.com/lorisleiva/lody",
+            "keywords": [
+                "classes",
+                "collection",
+                "files",
+                "laravel",
+                "load"
+            ],
+            "support": {
+                "issues": "https://github.com/lorisleiva/lody/issues",
+                "source": "https://github.com/lorisleiva/lody/tree/v0.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/lorisleiva",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-13T12:08:59+00:00"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "4.8.06",
             "source": {
@@ -3719,6 +3866,88 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "6.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "17607924aa0aa89bc0153c2ce45ed7c55083367b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/17607924aa0aa89bc0153c2ce45ed7c55083367b",
+                "reference": "17607924aa0aa89bc0153c2ce45ed7c55083367b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/container": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/database": "^8.12|^9.0|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/passport": "^11.0|^12.0",
+                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.4|^10.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.x-dev",
+                    "dev-master": "6.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 8.0 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-permission/issues",
+                "source": "https://github.com/spatie/laravel-permission/tree/6.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-04-19T12:35:28+00:00"
         },
         {
             "name": "symfony/clock",
@@ -8430,6 +8659,66 @@
                 }
             ],
             "time": "2024-03-03T12:36:25+00:00"
+        },
+        {
+            "name": "timwassenburg/laravel-service-generator",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timwassenburg/laravel-service-generator.git",
+                "reference": "9fcd0e48d418f36c94efcb1917062fa9ea7a0fcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timwassenburg/laravel-service-generator/zipball/9fcd0e48d418f36c94efcb1917062fa9ea7a0fcc",
+                "reference": "9fcd0e48d418f36c94efcb1917062fa9ea7a0fcc",
+                "shasum": ""
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^8.5",
+                "pestphp/pest": "^2.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TimWassenburg\\ServiceGenerator\\Http\\Providers\\CommandServiceProvider",
+                        "TimWassenburg\\ServiceGenerator\\ServiceGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TimWassenburg\\ServiceGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Wassenburg"
+                }
+            ],
+            "description": "Generate Laravel services",
+            "homepage": "https://github.com/timwassenburg/laravel-service-generator",
+            "keywords": [
+                "artisan",
+                "cli",
+                "generator",
+                "laravel",
+                "pattern",
+                "php",
+                "services"
+            ],
+            "support": {
+                "issues": "https://github.com/timwassenburg/laravel-service-generator/issues",
+                "source": "https://github.com/timwassenburg/laravel-service-generator/tree/v1.0.5"
+            },
+            "time": "2023-04-27T09:49:57+00:00"
         }
     ],
     "aliases": [],
