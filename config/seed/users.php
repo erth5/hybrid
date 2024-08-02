@@ -9,7 +9,7 @@ return [
     ],
     [
         "name" => "dev",
-        "email" => "mnf29711@omeie.com",
+        "email" => "hreh@omeie.com",
         "roles" => ["all"],
         "password" => "q3SaJ7E2HBW7yy"
     ],

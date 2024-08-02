@@ -42,19 +42,6 @@ class ComponentList extends Command
         'factory' => 'database/factories/',
         'migration' => 'database/migrations/',
         'test' => 'tests/',
-
-        // Laravel Nova Pfade
-        'nova-action' => 'app/Nova/Actions/',
-        'nova-dashboard' => 'app/Nova/Dashboards/',
-        'nova-filter' => 'app/Nova/Filters/',
-        'nova-lens' => 'app/Nova/Lenses/',
-        'nova-resource' => 'app/Nova/',
-        'nova-tool' => 'nova-components/',
-
-        // Filament Pfade
-        'filament-resource' => 'app/Filament/Resources/',
-        'filament-widget' => 'app/Filament/Widgets/',
-        'filament-page' => 'app/Filament/Pages/',
     ];
 
     /**

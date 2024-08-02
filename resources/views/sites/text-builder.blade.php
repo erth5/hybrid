@@ -5,6 +5,8 @@
     </h2>
     </x-slot> --}}
     <div class="mt-7">
-        <livewire:time-event>
+        <livewire:text-builder.github>
     </div>
 </x-app-layout>
+
+

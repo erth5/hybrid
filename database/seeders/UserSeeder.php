@@ -14,8 +14,8 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        if (config()->has('users')) {
-            $users = config()->get('users');
+        if (config()->has('seed.users')) {
+            $users = config()->get('seed.users');
             if (!$users) {
                 return;
             }
@@ -26,7 +26,7 @@ class UserSeeder extends Seeder
                     'email' => $seedUser['email'],
                     'email_verified_at' => now(),
                     'password' => bcrypt($seedUser['password']),
-                    'abbreviation' => $seedUser['abbreviation'],
+                    'abbreviation' => $seedUser['abbreviation'] ?? null,
                 ]);
 
                 $roles = $seedUser['roles'];

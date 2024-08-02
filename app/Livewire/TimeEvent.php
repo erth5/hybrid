@@ -4,9 +4,11 @@ namespace App\Livewire;
 
 use Carbon\Carbon;
 use Livewire\Component;
+use Psy\Readline\Hoa\Console;
 
 class TimeEvent extends Component
 {
+    protected $listeners = ['checkTime' => 'checkTime'];
     public $message;
 
     public function mount()
@@ -23,7 +25,7 @@ class TimeEvent extends Component
         } elseif ($now->hour == 14 && $now->minute == 30) {
             $this->message = "Es ist 14:30 Uhr! Zeit für Aktion 2!";
         } else {
-            $this->message = "Warte auf das nächste Event.";
+            $this->message = now()->format('d.m.Y H:i:s');
         }
     }
 
