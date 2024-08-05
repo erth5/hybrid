@@ -30,7 +30,7 @@ Route::middleware([
 
     Route::get('text-builder', function () {
         return view('sites.text-builder');
-    })->name('text-builder');
+    })->name('text builder');
 
     Route::resource('background', BackgroundController::class)->only('store');
     Route::resource('media', MediaController::class);

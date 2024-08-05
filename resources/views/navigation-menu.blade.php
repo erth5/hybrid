@@ -22,10 +22,10 @@
                         {{ __('Flow') }}
                     </x-nav-link>
                 </div>
-                {{-- Text Builder Seite --}}
+                {{-- text builder Seite --}}
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('text-builder') }}" :active="request()->routeIs('text-builder')">
-                        {{ __('text-builder') }}
+                    <x-nav-link href="{{ route('text builder') }}" :active="request()->routeIs('text builder')">
+                        {{ __('Text Builder') }}
                     </x-nav-link>
                 </div>
 
