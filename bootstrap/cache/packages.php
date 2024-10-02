@@ -102,6 +102,13 @@
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
     ),
   ),
+  'spatie/livewire-filepond' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\LivewireFilepond\\LivewireFilepondServiceProvider',
+    ),
+  ),
   'timwassenburg/laravel-service-generator' => 
   array (
     'providers' => 

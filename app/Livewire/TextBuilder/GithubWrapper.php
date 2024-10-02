@@ -8,6 +8,7 @@ use Livewire\Component;
 class GithubWrapper extends Component
 {
     public $units = [];
+    public $token = '';
 
     public function mount()
     {
@@ -37,6 +38,13 @@ class GithubWrapper extends Component
             $unit->save();
         }
     }
+
+    public function tokenChanged($newToken)
+    {
+    $this->token = $newToken;
+    $this->emit('tokenUpdated', $newToken);
+    }
+
 
     public function render()
     {

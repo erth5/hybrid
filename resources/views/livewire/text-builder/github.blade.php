@@ -2,7 +2,6 @@
     <input type="text" wire:model.lazy="account_name" placeholder="Account Name">
     <input type="text" wire:model.lazy="repository" placeholder="Repository">
 
-    <input type="text" wire:model.lazy="token" placeholder="Token">
     <label for="email" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">Will not be saved</label>
 
     <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Set Git User</h3>

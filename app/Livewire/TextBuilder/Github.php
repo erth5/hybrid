@@ -12,7 +12,7 @@ class Github extends Component
     public $account_name = '';
     public $repository = '';
     public $token = '';
-    
+
     public function mount($unit_number)
     {
         $this->unit_number = $unit_number + 1;
@@ -27,6 +27,10 @@ class Github extends Component
         }else{
             $unit_number = 1;
         }
+
+        $this->listen('tokenUpdated', function ($newToken) {
+            $this->token = $newToken;
+        });
     }
 
     protected $rules = [
