@@ -11,11 +11,11 @@ class Github extends Component
 
     public $account_name = '';
     public $repository = '';
-    public $token = '';
+    public $token = 'INITGUEST';
 
     public function mount($unit_number)
     {
-        $this->unit_number = $unit_number + 1;
+        $this->unit_number = $unit_number;
         // dd($this->unit_number);
         $unit = GithubModel::where('user_id', auth()->id())
             ->where('unit_number', $unit_number)
@@ -27,10 +27,12 @@ class Github extends Component
         }else{
             $unit_number = 1;
         }
+    }
 
-        $this->listen('tokenUpdated', function ($newToken) {
-            $this->token = $newToken;
-        });
+    public function updateToken($newToken)
+    {
+        $this->token = $newToken;
+        $this->emit('tokenUpdated');
     }
 
     protected $rules = [
@@ -41,6 +43,7 @@ class Github extends Component
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
+
 
         GithubModel::updateOrCreate(
             ['user_id' => auth()->id(), 'unit_number' => $this->unit_number],

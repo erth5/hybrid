@@ -8,7 +8,7 @@ use Livewire\Component;
 class GithubWrapper extends Component
 {
     public $units = [];
-    public $token = '';
+    public $token = 'INITHOST';
 
     public function mount()
     {
@@ -17,7 +17,7 @@ class GithubWrapper extends Component
 
     public function addUnit()
     {
-        if (count($this->units) < 5) {
+        if (count($this->units) < 20) {
             $this->units->push(new Github(['unit_number' => count($this->units) + 1]));
         }
     }

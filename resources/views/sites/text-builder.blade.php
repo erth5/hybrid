@@ -5,7 +5,11 @@
     </h2>
     </x-slot> --}}
 
+    {{--
     <div class="mt-7">
         <livewire:text-builder.github-wrapper>
     </div>
+    --}}
+
+
 </x-app-layout>
