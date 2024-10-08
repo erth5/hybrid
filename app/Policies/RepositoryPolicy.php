@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Github;
+use App\Models\Repository;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
-class GithubPolicy
+class RepositoryPolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -19,7 +19,7 @@ class GithubPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Github $github): bool
+    public function view(User $user, Repository $repository): bool
     {
         //
     }
@@ -35,7 +35,7 @@ class GithubPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Github $github): bool
+    public function update(User $user, Repository $repository): bool
     {
         //
     }
@@ -43,7 +43,7 @@ class GithubPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Github $github): bool
+    public function delete(User $user, Repository $repository): bool
     {
         //
     }
@@ -51,7 +51,7 @@ class GithubPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, Github $github): bool
+    public function restore(User $user, Repository $repository): bool
     {
         //
     }
@@ -59,7 +59,7 @@ class GithubPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, Github $github): bool
+    public function forceDelete(User $user, Repository $repository): bool
     {
         //
     }

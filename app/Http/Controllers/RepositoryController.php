@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Github;
-use App\Http\Requests\StoreGithubRequest;
-use App\Http\Requests\UpdateGithubRequest;
+use App\Http\Requests\StoreRepositoryRequest;
+use App\Http\Requests\UpdateRepositoryRequest;
+use App\Models\Repository;
 
-class GithubController extends Controller
+class RepositoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class GithubController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreGithubRequest $request)
+    public function store(StoreRepositoryRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class GithubController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Github $github)
+    public function show(Repository $repository)
     {
         //
     }
@@ -43,7 +43,7 @@ class GithubController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Github $github)
+    public function edit(Repository $repository)
     {
         //
     }
@@ -51,7 +51,7 @@ class GithubController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateGithubRequest $request, Github $github)
+    public function update(UpdateRepositoryRequest $request, Repository $repository)
     {
         //
     }
@@ -59,7 +59,7 @@ class GithubController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Github $github)
+    public function destroy(Repository $repository)
     {
         //
     }

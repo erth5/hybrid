@@ -55,6 +55,11 @@
         </div>
     </div>
 
+    @if(session()->has('message'))
+        <div class="alert alert-info">
+            {{ session('message') }}
+        </div>
+    @endif
 
     {{-- <div class="min-h-screen bg-cover bg-center" style="background-image: url('{{ storage_path('backgrounds/wall.png') }}');">
     awow

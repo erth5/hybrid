@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Github extends Model
+class Repository extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'user_id',
-        'unit_number',
-        'account_name',
-        'repository',
+        'name',
+        'account_id'
     ];
 }
