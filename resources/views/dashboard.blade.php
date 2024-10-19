@@ -4,6 +4,9 @@
             {{ __('Dashboard') }}
     </h2>
     </x-slot> --}}
+
+
+
     <div class="mt-7">
         <livewire:time-event>
     </div>

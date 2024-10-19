@@ -56,9 +56,9 @@
     </div>
 
     @if(session()->has('message'))
-        <div class="alert alert-info">
-            {{ session('message') }}
-        </div>
+    <div class="alert alert-info">
+        {{ session('message') }}
+    </div>
     @endif
 
     {{-- <div class="min-h-screen bg-cover bg-center" style="background-image: url('{{ storage_path('backgrounds/wall.png') }}');">
@@ -90,6 +90,21 @@
         </main>
     </div>
 
+    {{-- clipboard copy --}}
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.magic('clipboard', () => {
+                return (subject) => {
+                    navigator.clipboard.writeText(subject).then(() => {
+                        "copy success"
+                    }, () => {
+                        "copy failure"
+                    });
+                }
+            })
+        })
+
+    </script>
 
     {{-- <img alt="background" src="{{asset('default.png')}}"> --}}
     @stack('modals')

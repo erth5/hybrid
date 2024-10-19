@@ -6,7 +6,6 @@ use App\Models\Account;
 use App\Models\Repository;
 use Livewire\Component;
 
-
 class Git extends Component
 {
     public $token;
@@ -17,6 +16,11 @@ class Git extends Component
 
     public $new_acc;
     public $new_repo;
+
+    public $copytext = [
+        'Set Git User' => 'git config user.name {{ $selectedAccName ?? "" }}',
+        'header2' => 'txt2',
+    ];
 
     public function mount(){
         if (!$this->selectedAccId) {
