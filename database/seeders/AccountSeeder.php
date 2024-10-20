@@ -14,13 +14,14 @@ class AccountSeeder extends Seeder
     public function run(): void
     {
         $accounts = [
-            'erth5',
-            'DockerComposeFiles'
+            'dev' => ['name' => 'erth5', 'email' => 'rthem@gmx.de'],
+            'infra' => ['name' => 'DockerComposeFiles', 'email' => 'ped5553@gmail.com'],
         ];
 
         foreach ($accounts as $account) {
             $startUser = Account::create([
-                'name' => $account,
+                'name' => $account['name'],
+                'email' => $account['email'],
                 'user_id' => 2
             ]);
         }

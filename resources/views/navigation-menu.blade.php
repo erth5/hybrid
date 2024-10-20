@@ -15,17 +15,25 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link href="{{ route('app list') }}" :active="request()->routeIs('app list')">
+                            {{ __('App List') }}
+                        </x-nav-link>
+                    </div>
+
+                    {{-- text builder --}}
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link href="{{ route('text builder') }}" :active="request()->routeIs('text builder')">
+                            {{ __('Text Builder') }}
+                        </x-nav-link>
+                    </div>
+
                 </div>
-                {{-- Timming Seite --}}
+                {{-- Timming --}}
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{ route('flow') }}" :active="request()->routeIs('flow')">
                         {{ __('Flow') }}
-                    </x-nav-link>
-                </div>
-                {{-- text builder Seite --}}
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('text builder') }}" :active="request()->routeIs('text builder')">
-                        {{ __('Text Builder') }}
                     </x-nav-link>
                 </div>
 

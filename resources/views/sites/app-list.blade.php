@@ -11,39 +11,46 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background-color: #333;
             color: #fff;
             padding: 1em 0;
             text-align: center;
         }
+
         nav {
             display: flex;
             justify-content: space-around;
             background-color: #555;
             padding: 0.5em 0;
         }
+
         nav a {
             color: white;
             text-decoration: none;
         }
+
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
         }
+
         section {
             background: white;
             margin: 10px 0;
             padding: 20px;
             border-radius: 5px;
         }
+
         footer {
             text-align: center;
             padding: 1em 0;
             background-color: #333;
             color: white;
         }
+
     </style>
 </head>
 <body>
@@ -51,9 +58,7 @@
         <h1>IT Programmübersicht</h1>
     </header>
     <nav>
-        <a href="#programme">Programme</a>
-        <a href="#themen">Themen</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#programme">-</a>
     </nav>
     <div class="container" id="programme">
         <section>
@@ -84,7 +89,7 @@
         </section>
     </div>
     <footer>
-        <p>Kontakt: info@itprogramme.de</p>
+        <p>-</p>
     </footer>
 </body>
 </html>

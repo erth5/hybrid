@@ -11,10 +11,12 @@ class Git extends Component
     public $token;
     public $selectedAccId;
     public $selectedAccName;
+    public $selectedMailname;
     public $selectedRepoId;
     public $selectedRepoName;
 
     public $new_acc;
+    public $new_email;
     public $new_repo;
 
     public $copytext = [
@@ -43,6 +45,10 @@ class Git extends Component
     public function updatedSelectedAccId($value)
     {
         $this->selectedAccName = Account::find($value)->name;
+        
+        if (Account::find($value)->email){
+            $this->selectedMailname = Account::find($value)->email;
+        }
     }
     public function updatedSelectedRepoId($value)
     {
@@ -53,13 +59,16 @@ class Git extends Component
     {
         $validatedAcc = $this->validate([
             'new_acc' => 'required|string|max:255',
+            'new_email' => 'required|email|max:255'
         ]);
         Account::create([
             'user_id' => auth()->id(),
-            'name' => $validatedAcc['new_acc']
+            'name' => $validatedAcc['new_acc'],
+            'email' => $validatedAcc['new_email'],
         ]);
         $this->updatedSelectedAccId($this->selectedAccId);
         $this->new_acc = '';
+        $this->new_email = '';
     }
     public function create_repo()
     {

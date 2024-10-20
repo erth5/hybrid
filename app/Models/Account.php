@@ -10,6 +10,7 @@ class Account extends Model
     use HasFactory;
     protected $fillable = [
         'name',
+        'email',
         'user_id'
     ];
 }
