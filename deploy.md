@@ -34,3 +34,16 @@ git restore .
 
 composer show | grep redis
 php artisan test --filter RedisConnectionTest
+
+## Deploy result
+
+https://laracasts.com/discuss/channels/livewire/has-anyone-got-livewire-3-running-in-production-on-a-nginx-server
+
+"post-update-cmd": [
+"@php artisan vendor:publish --tag=laravel-assets --ansi",
+"@php artisan vendor:publish --tag=livewire:assets --ansi"
+],
+
+"post-install-cmd": [
+"@php artisan vendor:publish --tag=livewire:assets --ansi"
+]
