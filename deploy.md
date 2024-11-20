@@ -11,15 +11,17 @@ php artisan serve
 npm run dev
 ->Browser öffnen und einloggen
 
+### Erst-Deployment zu Production
+
+chmod -R 755 storage
+.env kopieren und anpassen
+
 ## Deployment zu Production
 
 git pull
 composer install --optimize-autoloader --no-dev
 npm install --omit=dev
-npm run prod
-chmod -R 755 storage
-.env kopieren und
-
+artisan vendor:publish --tag=livewire:assets # Kann gepushed werden
 php artisan optimize
 
 ### Fehlerbehebung wenn Daten auf dem Production geändert wurden
