@@ -22,6 +22,7 @@ git pull
 composer install --optimize-autoloader --no-dev
 npm install --omit=dev
 artisan vendor:publish --tag=livewire:assets # Kann gepushed werden
+php artisan migrate
 php artisan optimize
 
 ### Fehlerbehebung wenn Daten auf dem Production geändert wurden
